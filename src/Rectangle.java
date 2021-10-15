@@ -42,6 +42,34 @@ public class Rectangle
     }
 
 
+    public void flip()
+    {
+        double tempWidth = length;
+        length = width;
+        width = tempWidth;
+    }
+
+    public void cutInHalf()
+    {
+        length /= 2;
+        width /= 2;
+    }
+
+    public double area()
+    {
+        //double area = length * width;
+        //return area;
+
+        return length * width;
+        //the most supper awesom method after you do area
+        //this will never happen
+    }
+
+    public double perimeter()
+    {
+        return (2 * length) + (2 * width);
+    }
+
     public double getLength()
     {
         return length;
@@ -53,22 +81,36 @@ public class Rectangle
     }
 
 
-    private void setLength(double length)
+    public void setLength(double length)
     {
         this.length = length;
     }
     
 
-    private void setWidth(double width)
+    public void setWidth(double width)
     {
         this.width = width;
     }
+
+
+
+
 
 
     public static  String getBrand()
     {
         return brand;
     }
+
+
+
+
+
+
+
+
+
+
 
 
     private static final String brand = "Desjardins LLC";
